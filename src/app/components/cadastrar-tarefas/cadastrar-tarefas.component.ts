@@ -26,5 +26,4 @@ export class CadastrarTarefasComponent implements OnInit {
       this.router.navigate(['/listar-tarefas']);
     }
   }
-
 }

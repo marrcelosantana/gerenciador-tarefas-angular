@@ -35,6 +35,4 @@ export class EditarTarefasComponent implements OnInit {
       this.router.navigate(['/listar-tarefas']);
     }
   }
-
-
 }

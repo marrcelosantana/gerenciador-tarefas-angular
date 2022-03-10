@@ -14,5 +14,4 @@ export class TarefaConcluidaDirective implements OnInit {
       this.el.nativeElement.style.textDecoration = "line-through";
     }
   }
-
 }
