@@ -10,11 +10,15 @@ import { TarefaService } from './services/tarefa.service';
 
 import { AppComponent } from './app.component';
 import { ListarTarefasComponent } from './components/listar-tarefas/listar-tarefas.component';
+import { CadastrarTarefasComponent } from './components/cadastrar-tarefas/cadastrar-tarefas.component';
+import { EditarTarefasComponent } from './components/editar-tarefas/editar-tarefas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListarTarefasComponent
+    ListarTarefasComponent,
+    CadastrarTarefasComponent,
+    EditarTarefasComponent
   ],
   imports: [
     BrowserModule,

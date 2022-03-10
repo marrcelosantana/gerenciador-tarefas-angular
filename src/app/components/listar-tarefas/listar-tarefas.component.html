@@ -6,7 +6,7 @@
       <th>Tarefa</th>
       <th>Concluída</th>
       <th class="text-center">
-        <a class="btn btn-xs btn-success">
+        <a class="btn btn-xs btn-success" [routerLink]="['/cadastrar-tarefas']">
           <span style="color: white">Novo</span>
         </a>
       </th>
@@ -16,11 +16,11 @@
         {{ tarefa.nome }}
       </td>
       <td style="width: 70px" class="text-center">
-        <input type="checkbox" style="cursor: pointer;" [value]="tarefa.id">
+        <input type="checkbox" style="cursor: pointer;" [value]="tarefa.id" [checked]="tarefa.concluida">
       </td>
       <td class="text-center" style="width: 200px">
         <a title="Editar" alt="Editar" class="btn btn-xs btn-info" style="margin-right: 5px">
-          <span style="color: white">Editar</span>
+          <span style="color: white" [routerLink]="['/editar-tarefas/'+tarefa.id]">Editar</span>
         </a>
         <a href="#" title="Remover" alt="Remover" class="btn btn-xs btn-danger">
           Remover
