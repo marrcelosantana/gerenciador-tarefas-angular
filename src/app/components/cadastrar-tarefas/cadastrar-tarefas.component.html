@@ -15,13 +15,25 @@
           [(ngModel)]="tarefa.nome"
           #nome="ngModel"
         />
-        <div class="alert alert-danger" style="margin-top: 20px" *ngIf="nome.errors && (nome.dirty || nome.touched)">
+        <div
+          class="alert alert-danger"
+          style="margin-top: 20px"
+          *ngIf="nome.errors && (nome.dirty || nome.touched)"
+        >
           <div [hidden]="!nome.errors.required">Digite a tarefa.</div>
-          <div [hidden]="!nome.errors.minlength">A tarefa deve conter ao menos 5 caracteres.</div>
+          <div [hidden]="!nome.errors.minlength">
+            A tarefa deve conter ao menos 5 caracteres.
+          </div>
         </div>
       </div>
       <div class="form-group text-center">
-        <input type="submit" class="btn btn-success" value="Cadastrar" [disabled]="!formTarefa.form.valid" (click)="cadastrar()"/>
+        <input
+          type="submit"
+          class="btn btn-success"
+          value="Cadastrar"
+          [disabled]="!formTarefa.form.valid"
+          (click)="cadastrar()"
+        />
         <a
           class="btn btn-xs btn-info"
           style="margin-left: 5px"
