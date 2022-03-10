@@ -12,13 +12,15 @@ import { AppComponent } from './app.component';
 import { ListarTarefasComponent } from './components/listar-tarefas/listar-tarefas.component';
 import { CadastrarTarefasComponent } from './components/cadastrar-tarefas/cadastrar-tarefas.component';
 import { EditarTarefasComponent } from './components/editar-tarefas/editar-tarefas.component';
+import { TarefaConcluidaDirective } from './directives/tarefa-concluida.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarTarefasComponent,
     CadastrarTarefasComponent,
-    EditarTarefasComponent
+    EditarTarefasComponent,
+    TarefaConcluidaDirective
   ],
   imports: [
     BrowserModule,
