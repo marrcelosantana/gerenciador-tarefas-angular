@@ -22,7 +22,7 @@
         <a title="Editar" alt="Editar" class="btn btn-xs btn-info" style="margin-right: 5px">
           <span style="color: white" [routerLink]="['/editar-tarefas/'+tarefa.id]">Editar</span>
         </a>
-        <a href="#" title="Remover" alt="Remover" class="btn btn-xs btn-danger">
+        <a href="#" title="Remover" alt="Remover" class="btn btn-xs btn-danger" (click)="remover($event, tarefa)">
           Remover
         </a>
       </td>
