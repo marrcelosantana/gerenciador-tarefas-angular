@@ -26,11 +26,11 @@ export class ListarTarefasComponent implements OnInit {
     console.log(this.tarefas);
   }
 
-  remover(tarefa: Tarefa){
+  remover($event, tarefa: Tarefa){
+    $event.preventDefault();
     if(confirm(`Deseja remover a tarefa "${tarefa.nome}" ?`)){
       this.tarefaService.remover(tarefa.id);
       this.tarefas = this.listarTodos();
-      this.inicializar();
     }
   }
 
