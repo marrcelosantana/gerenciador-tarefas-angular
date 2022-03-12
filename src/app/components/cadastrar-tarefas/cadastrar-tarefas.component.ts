@@ -20,7 +20,7 @@ export class CadastrarTarefasComponent implements OnInit {
     this.tarefa = new Tarefa();
   }
 
-  cadastrar(){
+  cadastrar(): void {
     if(this.formTarefa.form.valid) {
       this.tarefaService.cadastrar(this.tarefa);
       this.router.navigate(['/listar-tarefas']);
